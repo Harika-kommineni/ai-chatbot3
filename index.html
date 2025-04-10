@@ -341,7 +341,7 @@
 
 Be friendly and concise. Use bullet points when helpful. Format responses for mobile display.`;
 
-                    const response = await fetch(`http://localhost/api.php?role=${encodeURIComponent(roleValue)}&prompt=${encodeURIComponent(promptValue)}`);
+                    const response = await fetch(`api.php?role=${encodeURIComponent(roleValue)}&prompt=${encodeURIComponent(promptValue)}`);
                     if (!response.ok) {
                         throw new Error('API request failed');
                     }
